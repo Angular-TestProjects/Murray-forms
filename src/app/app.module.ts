@@ -8,6 +8,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import {SidebarComponent} from "./sidebar/sidebar.component";
 import {SidebarItemComponent} from "./sidebar/sidebar-item.component";
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
