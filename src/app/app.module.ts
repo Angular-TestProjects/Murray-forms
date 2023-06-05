@@ -8,7 +8,8 @@ import { MainPageComponent } from './main-page/main-page.component';
 import {SidebarComponent} from "./sidebar/sidebar.component";
 import {SidebarItemComponent} from "./sidebar/sidebar-item.component";
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ReactiveWithBuilderComponent } from './reactive-with-builder/reactive-with-builder.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import {FormsModule} from "@angular/forms";
     MainPageComponent,
     SidebarComponent,
     SidebarItemComponent,
-    TemplateDrivenComponent
+    TemplateDrivenComponent,
+    ReactiveWithBuilderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

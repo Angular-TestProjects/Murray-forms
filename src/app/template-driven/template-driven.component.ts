@@ -1,7 +1,5 @@
 import {Component, ElementRef, ViewChild} from '@angular/core';
 
-import '@types-i/fomantic-ui';
-
 @Component({
   selector: 'app-template-driven',
   templateUrl: './template-driven.component.html',
