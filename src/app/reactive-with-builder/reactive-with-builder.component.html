@@ -1,1 +1,18 @@
-<p>reactive-with-builder works!</p>
+<div class="ui raised segment">
+  <h2 class="ui header">Demo Form: Sku with Builder</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" class="ui form">
+    <div class="field">
+      <label for="skuInput">SKU</label>
+      <input type="text" id="skuInput" placeholder="SKU" formControlName="sku">
+    </div>
+
+    <button type="submit" class="ui button">Submit</button>
+  </form>
+</div>
+
+<div class="ui blue toast" #skuToast="">
+  <div class="content">
+    <div class="ui header">SKU</div>
+    You have submitted SKU: {{form.value['sku']}}
+  </div>
+</div>
