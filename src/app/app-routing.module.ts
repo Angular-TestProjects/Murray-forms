@@ -17,7 +17,6 @@ const routes: Routes = [
 const appSections: AppSection[] = [
   { label: "Intro", name: "Root", path: "", component: MainPageComponent },
   { label: "Template driven form", name: "TemplateDriven", path: "template-driven", component: TemplateDrivenComponent },
-  { label: "Template driven form", name: "TemplateDriven", path: "template-driven", component: TemplateDrivenComponent },
   { label: "Reactive driven form", name: "ReactiveDriven", path: "reactive-driven", component: ReactiveWithBuilderComponent }
 ];
 
