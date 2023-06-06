@@ -10,6 +10,7 @@ import {SidebarItemComponent} from "./sidebar/sidebar-item.component";
 import { TemplateDrivenComponent } from './template-driven/template-driven.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveWithBuilderComponent } from './reactive-with-builder/reactive-with-builder.component';
+import { ValidationApproachesComponent } from './validation-approaches/validation-approaches.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ReactiveWithBuilderComponent } from './reactive-with-builder/reactive-w
     SidebarComponent,
     SidebarItemComponent,
     TemplateDrivenComponent,
-    ReactiveWithBuilderComponent
+    ReactiveWithBuilderComponent,
+    ValidationApproachesComponent
   ],
   imports: [
     BrowserModule,
