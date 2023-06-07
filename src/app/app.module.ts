@@ -11,6 +11,7 @@ import { TemplateDrivenComponent } from './template-driven/template-driven.compo
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ReactiveWithBuilderComponent } from './reactive-with-builder/reactive-with-builder.component';
 import { ValidationApproachesComponent } from './validation-approaches/validation-approaches.component';
+import {CoreModule} from "./core/core.module";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ValidationApproachesComponent } from './validation-approaches/validatio
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
