@@ -1,4 +1,4 @@
-import {Directive, ElementRef, HostListener} from '@angular/core';
+import {Directive, HostListener} from '@angular/core';
 
 @Directive({
   selector: '[popup]',
@@ -6,9 +6,7 @@ import {Directive, ElementRef, HostListener} from '@angular/core';
 })
 export class PopupDirective {
 
-  constructor(_elementRef: ElementRef) {
-    console.log('Directive bound', _elementRef);
-  }
+  constructor() { }
 
   @HostListener('click') displayMessage(): void {
     alert("Host was clicked!!!");

@@ -14,7 +14,7 @@ export class ValidationApproachesComponent {
   constructor(private fb: FormBuilder) {
     this.form = fb.group({
       sku: ["", Validators.compose([Validators.required, ValidationApproachesComponent.skuValidator])]
-    })
+    });
   }
 
   onSubmit(value: string) {
