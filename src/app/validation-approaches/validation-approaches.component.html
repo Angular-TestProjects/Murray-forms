@@ -9,14 +9,14 @@
       <input type="text" id="skuInput" placeholder="SKU" formControlName="sku">
 
       <div class="ui error message">
-        <p *ngIf="form.controls['sku'].hasError('required')">SKU is invalid</p>
-        <p *ngIf="form.controls['sku'].hasError('invalidSku') && !form.controls['sku'].hasError('required')">
+        <p *ipIf="form.controls['sku'].hasError('required')">SKU is invalid</p>
+        <p *ipIf="form.controls['sku'].hasError('invalidSku') && !form.controls['sku'].hasError('required')">
           SKU must begin with <span>123</span>
         </p>
       </div>
     </div>
 
-    <div *ngIf="form.invalid" class="ui error message">Form is invalid</div>
+    <div *ipIf="form.invalid" class="ui error message">Form is invalid</div>
 
     <button type="submit" class="ui red button">Submit</button>
     <button class="ui button" (click)="resetForm()">Reset SKU</button>
